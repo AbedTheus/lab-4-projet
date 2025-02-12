@@ -1,5 +1,5 @@
 import random
-rand = random.randomint(1,10)
+rand = random.randint(1,10)
 print ("grotoine entre dans la salle de sport")
 entrainement = input ("voulez vous faire le haut du corp (h) ou le bas du corp (b) ?")
 if entrainement == "h":
@@ -11,9 +11,12 @@ elif entrainement == "b":
 else:
     print("choix invalide. grostoine finit par hesiter et rentre chez lui sans entrainement")
 print ("fin de la séance, grostoine rentre chez lui satisfait")
-print("Un an après...")
+choixnbr = int(input("choisit un nombre entre (1,10)"))
+while rand != choixnbr:
+    choixnbr = int(input("choisit un nombre entre (1,10)"))
+    if rand == choixnbr:
+        break
 print("Grotoine est devenu musclé et un jour, un recruteur de bodybuilding vien voir grotoine.")
-
 choix = input ("voulez-vous suivre mon entrainement et prendre des produit dopant (oui) ou continuer à rester clean (non)?")
 if choix == "oui":
     print ("Grotoine passe un an à s'entrainer sous stéroïdes")
