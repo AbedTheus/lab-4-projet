@@ -6,8 +6,10 @@ while manger != "pat":
     manger = input ("grotoine hesite entre un burger (bur) ou des pâtes avec une poitrine de poulet (pat) ?")
 entrainement = input ("voulez vous faire le haut du corp (h) ou le bas du corp (b) ?")
 if entrainement == "h":
-    print("vous vous dirigez vers le bench press")
-    print("apres quelques séries, vous sentez vos muscles gonfler!")
+    print("grotoine se dirige vers le bench press aidez le a compter ses séries")
+    for i in range(1, 13):
+        print(i)
+    print("apres quelques séries, il sentez vos muscles gonfler!")
 elif entrainement == "b":
     print("vous vous dirigez vers le legpress")
     print("vos jambes tranblent apres une intense séances")
