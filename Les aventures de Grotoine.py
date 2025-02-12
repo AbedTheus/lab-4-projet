@@ -1,6 +1,9 @@
 import random
 rand = random.randint(1,10)
-print ("grotoine entre dans la salle de sport")
+print ("grotoine doit s'entrainer dans la salle de sport mais avant il doit manger sainement")
+manger = input ("grotoine hesite entre un burger (bur) ou des pâtes avec une poitrine de poulet (pat) ?")
+while manger != "pat":
+    manger = input ("grotoine hesite entre un burger (bur) ou des pâtes avec une poitrine de poulet (pat) ?")
 entrainement = input ("voulez vous faire le haut du corp (h) ou le bas du corp (b) ?")
 if entrainement == "h":
     print("vous vous dirigez vers le bench press")
@@ -11,6 +14,7 @@ elif entrainement == "b":
 else:
     print("choix invalide. grostoine finit par hesiter et rentre chez lui sans entrainement")
 print ("fin de la séance, grostoine rentre chez lui satisfait")
+print ("pour que grotoine recoisune occasion en or essayer de deviner mon chiffre")
 choixnbr = int(input("choisit un nombre entre (1,10)"))
 while rand != choixnbr:
     choixnbr = int(input("choisit un nombre entre (1,10)"))
